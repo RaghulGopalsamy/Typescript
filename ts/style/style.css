@@ -1,0 +1,12 @@
+#regstration{
+    display: block;
+}
+#existing_user{
+    display: none;
+}
+#selectbox{
+    display: none;
+}
+#my_List{
+    display: none;
+}

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>course Registration</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script type="text/javascript" src="script/script.js"></script>
+    </head>
+    <body>
+        <div id="registeration">
+            <h3><b>Register Here</b></h3>
+            Username:
+            <input type="text" id="username" placeholder="name"> <br><br>
+            Age:
+            <input type="text" id="age" placeholder="Age"><br><br>
+            Mobile Number :
+            <input type="text" id="mobile_number" placeholder="Mobile Number" max="10"> <br><br>
+            <button onclick="Login()">Login</button> <br> <br>
+
+
+        </div>
+        <div id="existing_user" >
+            <h3><b>Login</b></h3>
+            UserId:
+            <input type="text" id="userid" placeholder="Enter your Id"> <br><br>
+            <button id="con_firm" onclick="confirm()">Confirm</button>
+        </div>
+        <div id="selectbox">
+            <h3><b>Select Your Course</b></h3>
+            Available Course:
+            <select id="couses">
+                <option value="C#">CSharp</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="Js">JavaScript</option>
+                <option value="ts">TypeScript</option>
+            </select> <br><br>
+            Required Days:
+            <input type="number" id="required_days" placeholder="Enter the days">
+            <button onclick="enroll()">Enroll</button>
+        </div>
+        <div id="my_List">
+            <h3><b>Your Courses</b></h3>
+            <button onclick="CourseList()" id="course_list">List Of Courses</button>
+            <button onclick="Complete()" id="days_to_complete">Total days required to Complete</button>
+        </div>
+
+    </body>
+</html>
